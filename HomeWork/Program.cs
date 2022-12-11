@@ -4,87 +4,38 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Il daxil edin");
-            int Sil = int.Parse(Console.ReadLine());
-            if (Sil<=2022) 
-               {
-                Console.WriteLine("duzgundur");
 
-            }else
+            int a, b, c, d, e, f;
+            Console.WriteLine("Day of birth");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Month of birth");
+            b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Year of birth");
+            c = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Day");
+            d = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Month");
+            e = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Year");
+            f = Convert.ToInt32(Console.ReadLine());
+            if (b < e)
             {
-                Console.WriteLine("Sehvdir");
-            }   
-            
-            Console.WriteLine("Ay daxil edin");
-            int Say = int.Parse(Console.ReadLine());
-            if (Say <= 12)
+                Console.WriteLine($"{f - c} yash");
+            }
+            else if (b == e && d > a)
             {
-                Console.WriteLine("duzgundur");
-
+                Console.WriteLine($"{f - c} yash");
             }
             else
             {
-                Console.WriteLine("Sehvdir");
-            }
-            Console.WriteLine("Gun daxil edin");
-            int Sgun = int.Parse(Console.ReadLine());
-            if (Sgun <= 30)
-            {
-                Console.WriteLine("duzgundur");
-
-            }else
-            {
-                Console.WriteLine("Sehvdir");
-            }   
-            //
-            Console.WriteLine(" Son ili daxil edin");
-            int Eil = int.Parse(Console.ReadLine());
-            if (Eil > 0 || Eil<=2022)
-            {
-                int age = Eil - Sil;
-                Console.WriteLine("Yash:"+age);
-
-            }
-            else
-            {
-                Console.WriteLine("Sehvdir");
-            }
-            Console.WriteLine("Son ay daxil edin");
-            int Eay = int.Parse(Console.ReadLine());
-            if (Eay <= 12)
-            {
-                Console.WriteLine("duzgundur");
-
-            }
-            else
-            {
-                Console.WriteLine("Sehvdir");
-            }
-            Console.WriteLine("Son gun daxil edin");
-            int Egun = int.Parse(Console.ReadLine());
-            if (Egun <= 30)
-            {
-                Console.WriteLine("duzgundur");
-
-            }
-            else
-            {
-                Console.WriteLine("Sehvdir");
+                Console.WriteLine($"{f - c - 1} yash");
             }
 
 
 
 
-           
-            //  int Age = (EGun - SGun);
-            //Console.WriteLine(Age);
 
 
-
-            //if () {
-            
-            
-            //}
 
         }
     }
